@@ -10,3 +10,5 @@ A Stylus stylesheet to give the Zotero Web Library a dark mode.
 ## Installation
 1. Install the Stylus browser extension for [Chrome/Brave](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne), [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/), or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/).
 2. Install the style through [UserCSS](https://raw.githubusercontent.com/SoupyzInc/ZoteroDarkMode/main/ZoteroDarkMode.user.css).
+
+![](https://github.com/SoupyzInc/ZoteroDarkMode/blob/main/Images/Zotero%20Dark%20Mode%20Example.png)

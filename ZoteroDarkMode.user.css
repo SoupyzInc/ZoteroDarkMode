@@ -1,0 +1,146 @@
+/* ==UserStyle==
+@name           Zotero Dark Mode
+@namespace      github.com/openstyles/stylus
+@version        0.0.1
+@description    A Stylus stylesheet to give the Zotero Web Library a dark mode.
+@license        MIT
+@author         Matthew Okashita
+==/UserStyle== */
+
+@-moz-document regexp("https:\\/\\/www\\.zotero\\.org\\/.+(\\/(library|collections\\/.+|trash|publications).*)?") {
+    :root {
+        --dark-grey: #1d1e21 !important;    /*Darker Background Color*/
+        --grey: #23272A !important;         /*Normal Bakground Color*/
+        --light-grey: #2C2F33 !important;   /*Light Color to show that you can interact*/
+        --white-grey: #99AAB5 !important;   /*Lighter Color to show even more interactivity*/
+        --text: #d7d7d7 !important;         /*Text Color & Highlights*/
+        --sub-text: #a7a7a7 !important;     /*Sub Text Color*/
+    }
+    
+    .navbar {
+        background: var(--dark-grey) !important;
+    }
+
+    a, .truncate, div, button, .tag-selector, .tag-label {
+        color: var(--text) !important;
+    }
+
+    #document p{
+        color: var(--text) !important;}
+
+    .navbar .upgrade-storage {
+        padding: 0px !important;
+        margin: 0px !important;
+        max-width: 0px !important;
+        max-height: 0px !important;
+        visibility: hidden !important;
+    }
+
+    /*Sources List Header*/
+    .items{
+        background: var(--dark-grey) !important;
+    }
+
+    .icon {
+        color: var(--text) !important;
+    }
+
+    /*Sources List*/
+    .items-table .items-table-body {
+        padding-top: 2px;
+        background-image: repeating-linear-gradient(to bottom, #23272A 2px, #23272A 28px, #2C2F33 28px, #2C2F33 54px);
+        background-attachment: local;
+    }
+
+    .items-table .item.active {
+        background-color: #4f4f4f !important;
+    }
+    
+    /*Paper Info Pane (Bottom/Right)*/
+    .nav.tabs.compact.activate-on-focus {
+        background: var(--dark-grey) !important;
+    }
+
+    .tab-pane.active {
+        background: var(--grey) !important;
+    }
+
+    .tabs li.active a {
+        color: var(--text) !important;
+        box-shadow: inset 0 -1px var(--text), 0 1px var(--text);
+    }
+
+    /*Library/Collections Pane (Left)*/
+    .collection-tree {
+    background: var(--grey) !important;
+    }
+
+    .collection-tree li.selected>.item-container {
+        background: var(--dark-grey) !important;
+    }
+
+    .item-details .info-view {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-size: 20px;
+        color: #bbb;
+        background: var(--grey) !important;
+    }
+
+    .tag-selector-toggle {
+        background-color: var(--grey) !important;
+    }
+
+    .tag-selector {
+        border-top: 1px solid #ddd;
+        background: var(--grey) !important;
+    }
+
+    .tag-selector .tag-selector-filter-container {
+        background: var(--grey) !important;
+    }
+
+    .form-control {
+        background: var(--light-grey) !important;
+        color: var(--text) !Important;
+    }
+
+    .form-control:focus {
+        border: 1px solid var(--text) !important;
+        box-shadow: 0 0 0 2px var(--text) !important;
+    }
+
+    /*Dropdown Menues*/
+    .dropdown .dropdown-menu {
+        background-color: var(--light-grey) !important;
+        box-shadow: 0 0 0 1px rgb(0 0 0 / 8%), 0 3px 8px rgb(0 0 0 / 20%);
+    }
+
+    /*Pop up text entry boxes*/
+    .editable-control {
+        border: 3px solid var(--text) !important;
+        color: var(--text) !important;
+        background: var(--light-grey) !important;
+    }
+
+    li.selected {
+         background-color: var(--dark-grey) !important;
+    }
+
+    li:hover, button:hover, input:hover {
+        background: var(--light-grey) !Important;
+    }
+
+    /*Tags Top Header*/
+    .tab-pane.tags .toolbar {
+        background-color: var(--grey);
+    }
+
+    /*Notes Entry Box*/
+    html:not(.touch) .rich-editor {
+        color: var(--text) !important;
+        background-color: var(--grey) !important;
+    }
+}

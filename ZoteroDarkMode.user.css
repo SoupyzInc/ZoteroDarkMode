@@ -1,7 +1,10 @@
 /* ==UserStyle==
 @name           Zotero Dark Mode
 @namespace      github.com/openstyles/stylus
-@version        0.0.1
+@version        0.0.2
+@homepageURL    https://github.com/SoupyzInc/ZoteroDarkMode
+@supportURL     https://github.com/SoupyzInc/ZoterosDarkMode/issues
+@updateURL      https://raw.githubusercontent.com/SoupyzInc/ZoteroDarkMode/main/ZoteroDarkMode.user.css
 @description    A Stylus stylesheet to give the Zotero Web Library a dark mode.
 @license        MIT
 @author         Matthew Okashita
@@ -140,6 +143,12 @@
 
     /*Notes Entry Box*/
     html:not(.touch) .rich-editor {
+        color: var(--text) !important;
+        background-color: var(--grey) !important;
+    }
+    
+    /*Wang Background*/
+    .popover-header, .popover-body {
         color: var(--text) !important;
         background-color: var(--grey) !important;
     }
